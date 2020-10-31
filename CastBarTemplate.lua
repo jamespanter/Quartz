@@ -56,6 +56,7 @@ end
 
 -- OnUpdate handles the bar movement and the text updates
 local function OnUpdate(self)
+	local fadeOutTime = Quartz3.db.profile.fadeOut
 	local currentTime = GetTime()
 	local startTime, endTime, delay = self.startTime, self.endTime, self.delay
 	local db = self.config
@@ -102,7 +103,7 @@ local function OnUpdate(self)
 		local alpha
 		local stopTime = self.stopTime
 		if stopTime then
-			alpha = stopTime - currentTime + 1
+			alpha = stopTime - currentTime + fadeOutTime
 		else
 			alpha = 0
 		end

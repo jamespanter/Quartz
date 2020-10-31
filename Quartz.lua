@@ -29,6 +29,7 @@ local type, pairs, tonumber = type, pairs, tonumber
 local defaults = {
 	profile = {
 		modules = { ["*"] = true, ["EnemyCasts"] = false },
+		fadeOut = 1,
 		hidesamwise = true,
 		sparkcolor = {1, 1, 1, 0.5},
 		spelltextcolor = {1, 1, 1},

@@ -68,6 +68,15 @@ local function getOptions()
 							end,
 							order = 50,
 						},
+						fadeOut = {
+							type = "range",
+							name = L["Fade Out Time"],
+							desc = L["Cast bar fade out time for completed spell cast"],
+							min = 0, max = 2, step = 0.2,
+							order = 52,
+							get = getOpt,
+							set = setOpt,
+						},
 						nllock = {
 							type = "description",
 							name = "",
